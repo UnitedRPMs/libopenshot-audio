@@ -33,7 +33,7 @@ developing applications that use %{name}.
 
 
 %prep
-%setup -qc
+%setup -c
 %patch0 -p1 -b .libs
 
 
