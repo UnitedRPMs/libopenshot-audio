@@ -67,7 +67,7 @@ make %{?_smp_mflags}
 
 %changelog
 
-* Tue May 25 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.4-1
+* Thu May 25 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.4-1
 - Updated to 0.1.4-1
 
 * Wed Aug 31 2016 Pavlo Rudyi <paulcarroty at riseup.net> - 0.1.2-1
