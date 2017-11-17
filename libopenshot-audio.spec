@@ -1,5 +1,5 @@
 Name:           libopenshot-audio
-Version:        0.1.4
+Version:        0.1.5
 Release:        1%{?dist}
 Summary:        Audio library used by OpenShot
 
@@ -66,6 +66,9 @@ make %{?_smp_mflags}
 
 
 %changelog
+
+* Thu Nov 16 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.5-1
+- Updated to 0.1.5-1
 
 * Thu May 25 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.4-1
 - Updated to 0.1.4-1
