@@ -17,6 +17,7 @@ BuildRequires:  libX11-devel
 BuildRequires:  libXinerama-devel
 BuildRequires:  libXcursor-devel
 BuildRequires:  libXrandr-devel
+BuildRequires:  gcc-c++
 
 %description
 OpenShot Audio Library (libopenshot-audio) is an open-source 
