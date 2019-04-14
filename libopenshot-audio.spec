@@ -7,7 +7,8 @@ License:        GPLv3+
 URL:            http://openshot.org/
 Source0:  	https://github.com/OpenShot/%{name}/archive/7001b68787c0881a44bcafba98cccae509a31644.tar.gz#/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake
+BuildRequires:  cmake 
+BuildRequires:	make
 BuildRequires:  freetype-devel
 BuildRequires:  alsa-lib-devel
 BuildRequires:  libX11-devel
@@ -36,7 +37,7 @@ developing applications that use %{name}.
 
 
 %build
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
+%cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
 make %{?_smp_mflags}
 
 
