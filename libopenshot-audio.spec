@@ -5,10 +5,7 @@ Summary:        Audio library used by OpenShot
 
 License:        GPLv3+
 URL:            http://openshot.org/
-#Source0:        https://launchpad.net/libopenshot/0.1/%{version}/+download/%{name}-%{version}.tar.gz
-Source0:  	https://github.com/OpenShot/%{name}/archive/v%{version}.tar.gz
-
-#Patch0:         libopenshot-audio-0.0.3-libs.patch
+Source0:  	https://github.com/OpenShot/%{name}/archive/7001b68787c0881a44bcafba98cccae509a31644.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  freetype-devel
@@ -35,17 +32,16 @@ developing applications that use %{name}.
 
 
 %prep
-%setup -n %{name}-%{version}
-#%patch0 -p1 -b .libs
+%autosetup -n %{name}-7001b68787c0881a44bcafba98cccae509a31644 -p1
 
 
 %build
-export CXXFLAGS="%{optflags} -Wl,--as-needed"
-%cmake .
+%cmake -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
 make %{?_smp_mflags}
 
 
 %install
+
 %make_install
 
 
@@ -55,7 +51,7 @@ make %{?_smp_mflags}
 
 
 %files
-%doc AUTHORS COPYING README
+%doc AUTHORS COPYING README.md
 %{_libdir}/*.so.*
 
 %files devel
