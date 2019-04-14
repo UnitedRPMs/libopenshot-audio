@@ -36,7 +36,7 @@ developing applications that use %{name}.
 
 
 %build
-%cmake -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
 make %{?_smp_mflags}
 
 
