@@ -1,11 +1,31 @@
+#
+# spec file for package libopenshot-audio
+#
+# Copyright (c) 2020 UnitedRPMs.
+#
+# All modifications and additions to the file contributed by third parties
+# remain the property of their copyright owners, unless otherwise agreed
+# upon. The license for this file, and modifications and additions to the
+# file, is the same license as for the pristine package itself (unless the
+# license for the pristine package is not an Open Source License, in which
+# case the license is the MIT License). An "Open Source License" is a
+# license that conforms to the Open Source Definition (Version 1.9)
+# published by the Open Source Initiative.
+
+# Please submit bugfixes or comments via https://goo.gl/zqFJft
+#
+
+# 
+%define _legacy_common_support 1
+
 Name:           libopenshot-audio
-Version:        0.1.8
+Version:        0.1.9
 Release:        7%{?dist}
 Summary:        Audio library used by OpenShot
 
 License:        GPLv3+
 URL:            http://openshot.org/
-Source0:  	https://github.com/OpenShot/%{name}/archive/7001b68787c0881a44bcafba98cccae509a31644.tar.gz#/%{name}-%{version}.tar.gz
+Source0:  	https://github.com/OpenShot/%{name}/archive/b28b4375ae61745af72341ccfae1358dd9c485ce.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake 
 BuildRequires:	make
@@ -64,6 +84,9 @@ make %{?_smp_mflags}
 
 
 %changelog
+
+* Mon Feb 10 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.9-7
+- Updated to 0.1.9
 
 * Wed Apr 10 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.8-7
 - Updated to 0.1.8

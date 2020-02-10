@@ -3,5 +3,6 @@ BUILDROOT/*
 RPMS/*
 SPECS/*
 SRPMS/*
-libopenshot-audio*.gz
+*.gz
 .directory
+*.rpm
