@@ -19,13 +19,13 @@
 %define _legacy_common_support 1
 
 Name:           libopenshot-audio
-Version:        0.1.9
+Version:        0.2.0
 Release:        7%{?dist}
 Summary:        Audio library used by OpenShot
 
 License:        GPLv3+
 URL:            http://openshot.org/
-Source0:  	https://github.com/OpenShot/%{name}/archive/b28b4375ae61745af72341ccfae1358dd9c485ce.tar.gz#/%{name}-%{version}.tar.gz
+Source0:  	https://github.com/OpenShot/%{name}/archive/22d5bec9b50e35682bd943e87690076c0682d86d.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake 
 BuildRequires:	make
@@ -84,6 +84,9 @@ make %{?_smp_mflags}
 
 
 %changelog
+
+* Wed Mar 11 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.2.0-7
+- Updated to 0.2.0
 
 * Mon Feb 10 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.1.9-7
 - Updated to 0.1.9
