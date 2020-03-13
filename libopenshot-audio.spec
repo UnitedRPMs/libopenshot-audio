@@ -53,7 +53,7 @@ developing applications that use %{name}.
 
 
 %prep
-%autosetup -n %{name}-b28b4375ae61745af72341ccfae1358dd9c485ce -p1
+%autosetup -n %{name}-22d5bec9b50e35682bd943e87690076c0682d86d -p1
 
 
 %build
