@@ -16,7 +16,8 @@
 #
 
 # 
-%define _legacy_common_support 1
+#define _legacy_common_support 1
+#global _lto_cflags %{nil}
 
 Name:           libopenshot-audio
 Version:        0.2.0
@@ -58,11 +59,14 @@ developing applications that use %{name}.
 
 %build
 %cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--as-needed" .
-make %{?_smp_mflags}
+
+pushd %{_target_platform}
+%make_build V=0
 
 
 %install
 
+pushd %{_target_platform}
 %make_install
 
 
